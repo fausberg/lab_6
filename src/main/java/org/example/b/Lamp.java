@@ -1,6 +1,8 @@
 package org.example.b;
 
-public class Lamp extends ElectricAppliance{
+import java.io.Serializable;
+
+public class Lamp extends ElectricAppliance implements Serializable {
     private boolean isOn;
 
     public Lamp(String name, double power) {
@@ -49,4 +51,6 @@ public class Lamp extends ElectricAppliance{
     public boolean isOn() {
         return isOn;
     }
+
+
 }

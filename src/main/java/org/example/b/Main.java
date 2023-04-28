@@ -26,7 +26,8 @@ public class Main {
 
             list.turnOffAll();
 
-            connector.fileWriter(list);
+            connector.fileWriter(lamp1, lamp2);
+            connector.fileReader();
         } catch (Exception e) {
             System.out.println(e);
         }
